@@ -3,6 +3,9 @@
 		<image class="logo" src="/static/logo.png"></image>
 		<view>
 			<text class="title">{{title}}</text>
+			<!-- <div v-clickoutside="foo">测试</div> -->
+			<!-- <view v-clickoutside="foo">我用十年青春,赴你最后之约</view> -->
+			<u-button v-clickoutside="foo" type="primary" text="确定"></u-button>
 		</view>
 	</view>
 </template>
@@ -18,7 +21,9 @@
 
 		},
 		methods: {
-
+			foo(){
+				console.trace('foo');
+			}
 		}
 	}
 </script>
